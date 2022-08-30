@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Company component should have right Company component Snapshot 1`] = `
+<div
+  data-testid="companyNameEL"
+>
+  Company name is: 
+  Cognizant
+  <h2>
+    Welcome to my Company's official website
+  </h2>
+  <p
+    data-testid="employee-count"
+    style={
+      Object {
+        "color": "green",
+      }
+    }
+  >
+    Employee count 3,18,400
+  </p>
+  <input
+    onChange={[Function]}
+    placeholder="Enter country"
+    type="text"
+    value=""
+  />
+  <button
+    className="btn"
+    role="join-cognizant"
+  >
+    Join
+  </button>
+</div>
+`;

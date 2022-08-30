@@ -1,6 +1,6 @@
 import About, { add } from './About';
 
-describe(`About Component`, () => {
+xdescribe(`About Component`, () => {
   it(`should be Available`, () => {
     expect(About).toBeDefined();
   });
