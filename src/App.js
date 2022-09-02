@@ -24,14 +24,22 @@ function App() {
         >
           Welcome to Unit Testing using Jest & Enzyme
         </a>
-        <hr />
+        <div className="line"></div>
+
         <Company name="Cognizant Technology Solution" />
+        <div className="line"></div>
+
         <Counter />
-        <hr />
+        <div className="line"></div>
+
         <Movies info={movieInfo} />
+        <div className="line"></div>
+
         <Todos />
-        <hr />
+        <div className="line"></div>
+
         <Users />
+        <div className="line"></div>
       </header>
     </div>
   );

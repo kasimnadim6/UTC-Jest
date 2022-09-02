@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin: 1rem;
+  background-color: #f2f2f2;
 }
 
 .App-logo {
@@ -22,6 +24,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  border-radius: 5px;
 }
 
 .App-link {
@@ -35,4 +38,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+.line {
+  height: 2px;
+  width: 80%;
+  background-color: aliceblue;
+  margin: 2rem 0;
 }

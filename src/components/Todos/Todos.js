@@ -15,17 +15,42 @@ const Todos = () => {
   }, [url]);
   return (
     <div>
-      <h2 data-testid="title">This is TODO component</h2>
+      <h2 style={{ color: ' #61dafb' }} data-testid="title">
+        This is TODO component
+      </h2>
       <h3>Demo API Call and Testing</h3>
-      <div>
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '10px',
+          justifyItems: 'center',
+          alignItems: 'center',
+          padding: '0 1rem',
+        }}
+      >
         {todos.map((todo) => (
           <div
             key={todo.id}
-            style={{ border: '1px solid white', margin: '1rem 0' }}
+            style={{
+              border: '2px solid white',
+              borderRadius: '5px',
+              padding: '1rem',
+              flexGrow: '1',
+            }}
           >
-            <p>#{todo.id}</p>
+            <small>#{todo.id}</small>
             <h4>{todo.title}</h4>
-            <p>{todo.completed ? 'Completed' : 'Not Completed'}</p>
+            {todo.completed && (
+              <small style={{ color: 'green', textTransform: 'uppercase' }}>
+                Completed
+              </small>
+            )}
+            {!todo.completed && (
+              <small style={{ color: 'red', textTransform: 'uppercase' }}>
+                Not Completed
+              </small>
+            )}
           </div>
         ))}
       </div>

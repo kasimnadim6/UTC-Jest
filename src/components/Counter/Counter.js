@@ -11,11 +11,13 @@ function Counter() {
   };
   return (
     <div>
-      <h2>Counter</h2>
+      <h2 style={{ color: ' #61dafb' }}>Counter</h2>
       <button role="incrementBtn" onClick={increment}>
         +
       </button>
-      <small data-testid="counterValue">{counter}</small>
+      <small style={{ padding: '0 1.6rem ' }} data-testid="counterValue">
+        {counter}
+      </small>
       <button role="decrementBtn" onClick={decrement}>
         -
       </button>

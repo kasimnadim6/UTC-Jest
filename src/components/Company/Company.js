@@ -9,7 +9,9 @@ const Company = ({ name }) => {
   return (
     <div data-testid="companyNameEL">
       Company name is: {name}
-      <h2>Welcome to my Company's official website</h2>
+      <h2 style={{ color: ' #61dafb' }}>
+        Welcome to my Company's official website
+      </h2>
       <p data-testid="employee-count" style={{ color: 'green' }}>
         Employee count 3,18,400
       </p>

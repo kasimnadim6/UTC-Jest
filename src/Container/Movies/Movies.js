@@ -13,7 +13,7 @@ class Movies extends Component {
   render() {
     return (
       <div>
-        <h2>Movies | Testing Class Component</h2>
+        <h2 style={{ color: ' #61dafb' }}>Movies | Testing Class Component</h2>
         <p data-testid="heading">Welcome to movie portal</p>
         <p data-testid="movie-link">
           <a href={this.props.info?.url}>click here</a> to know more about{' '}
@@ -27,7 +27,6 @@ class Movies extends Component {
         <button data-testid="subscribe-btn" onClick={this.clickHandler}>
           {this.state.isSubscribed ? 'Unsubscribe' : 'Subscribe'}
         </button>
-        <hr />
       </div>
     );
   }

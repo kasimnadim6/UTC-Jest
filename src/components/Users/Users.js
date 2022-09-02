@@ -23,9 +23,11 @@ const Users = () => {
       <div
         key={user.id}
         style={{
-          border: 'solid 1px #ccc',
+          border: 'solid 2px #ccc',
+          borderRadius: '5px',
           textAlign: 'left',
-          margin: '20px 50px',
+          padding: '1rem',
+          flexGrow: '1',
         }}
       >
         <p>UserId: {user.id}</p>
@@ -36,9 +38,24 @@ const Users = () => {
   });
   return (
     <div>
-      <h1>USERS | Loads data from API</h1>
+      <h2 style={{ color: ' #61dafb' }}>USERS | Loads data from API</h2>
       <p>Testing using Mock API</p>
-      {error ? <p>Unable to load Users. Try again</p> : users}
+      {error ? (
+        <p>Unable to load Users. Try again</p>
+      ) : (
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '10px',
+            justifyItems: 'center',
+            alignItems: 'center',
+            padding: '0 1rem',
+          }}
+        >
+          {users}
+        </div>
+      )}
     </div>
   );
 };
