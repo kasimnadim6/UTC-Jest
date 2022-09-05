@@ -5,6 +5,7 @@ import Counter from './components/Counter/Counter';
 import Movies from './Container/Movies/Movies';
 import Todos from './components/Todos/Todos';
 import Users from './components/Users/Users';
+import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher';
 
 function App() {
   const movieInfo = {
@@ -39,6 +40,9 @@ function App() {
         <div className="line"></div>
 
         <Users />
+        <div className="line"></div>
+
+        <ThemeSwitcher />
         <div className="line"></div>
       </header>
     </div>
