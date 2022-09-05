@@ -3,16 +3,16 @@ import { fetchApi } from '../../utils/fetchAPI';
 import Users from './Users';
 
 jest.mock('../../utils/fetchAPI');
-describe('Users component', () => {
+xdescribe('Users component', () => {
   const mockUserList = [
     {
       id: 1,
-      name: 'Arun Vijayarengan',
+      name: 'Bond',
       phone: '+91 786526783',
     },
     {
       id: 2,
-      name: 'Kasim Nadim',
+      name: 'James',
       phone: '+91 886132139',
     },
   ];
@@ -24,7 +24,7 @@ describe('Users component', () => {
     fetchApi.mockResolvedValue(mockUserList);
     render(<Users />);
     await waitFor(() => {
-      expect(screen.getByText('Arun Vijayarengan')).toBeInTheDocument();
+      expect(screen.getByText('Bond')).toBeInTheDocument();
     });
   });
 });
