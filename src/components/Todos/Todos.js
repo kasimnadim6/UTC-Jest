@@ -12,6 +12,9 @@ const Todos = () => {
       setTodos(data);
     };
     fetchTodos();
+    return () => {
+      setTodos([]);
+    };
   }, [url]);
   return (
     <div>

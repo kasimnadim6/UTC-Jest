@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import Company from './Company';
 
-xdescribe(`Company component`, () => {
+describe(`Company component`, () => {
   it('should be available within app', () => {
     expect(Company).toBeDefined();
   });

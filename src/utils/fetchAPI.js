@@ -12,5 +12,7 @@ export const fetchApi = (url, method) => {
     .catch((err) => {
       console.log(err);
     })
-    .finally(() => {});
+    .finally(() => {
+      console.log('It is over!');
+    });
 };

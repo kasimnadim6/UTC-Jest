@@ -5,7 +5,7 @@ import { fetchApi } from '../../utils/fetchAPI';
 
 const Users = () => {
   const [userList, setUserList] = useState([]);
-  const [error, setError] = useState('');
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     fetchApi('https://jsonplaceholder.typicode.com/users?_limit=4')
@@ -18,24 +18,26 @@ const Users = () => {
   }, []);
 
   let users = null;
-  users = userList.map((user) => {
-    return (
-      <div
-        key={user.id}
-        style={{
-          border: 'solid 2px #ccc',
-          borderRadius: '5px',
-          textAlign: 'left',
-          padding: '1rem',
-          flexGrow: '1',
-        }}
-      >
-        <p>UserId: {user.id}</p>
-        <h3>{user.name}</h3>
-        <p>Phone: {user.phone}</p>
-      </div>
-    );
-  });
+  users =
+    userList &&
+    userList.map((user) => {
+      return (
+        <div
+          key={user.id}
+          style={{
+            border: 'solid 2px #ccc',
+            borderRadius: '5px',
+            textAlign: 'left',
+            padding: '1rem',
+            flexGrow: '1',
+          }}
+        >
+          <p>UserId: {user.id}</p>
+          <h3>{user.name}</h3>
+          <p>Phone: {user.phone}</p>
+        </div>
+      );
+    });
   return (
     <div>
       <h2 style={{ color: ' #61dafb' }}>USERS | Loads data from API</h2>

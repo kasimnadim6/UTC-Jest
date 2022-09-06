@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import Movies from './Movies';
 
-xdescribe('Movies Component', () => {
+describe('Movies Component', () => {
   const movieInfo = {
     id: 1,
     name: 'Wanted',

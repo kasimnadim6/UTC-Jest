@@ -25,6 +25,10 @@ const ThemeSwitcher = () => {
       </h2>
       <p>Current Theme: {theme}</p>
       <button onClick={handleToggleTheme}>Switch Theme</button>
+      <br />
+      <a href="https://enzymejs.github.io/enzyme/">
+        Refer Enzyme official document.
+      </a>
     </div>
   );
 };

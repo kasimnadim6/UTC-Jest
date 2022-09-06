@@ -1,8 +1,13 @@
+import { render, screen } from '@testing-library/react';
 import About, { add } from './About';
 
-xdescribe(`About Component`, () => {
+describe(`About Component`, () => {
   it(`should be Available`, () => {
     expect(About).toBeDefined();
+  });
+  it('should have about text', () => {
+    render(<About />);
+    expect(screen.getByTestId('about')).toHaveTextContent('About');
   });
   it(`should add two numbers`, () => {
     expect(add(10, 20)).toEqual(30);

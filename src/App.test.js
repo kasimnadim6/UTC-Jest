@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-xdescribe(`App Component`, () => {
+describe(`App Component`, () => {
   it('should have welcome text', () => {
     render(<App />);
     const welcomeEl = screen.getByText(/Welcome to Unit Testing/i);
